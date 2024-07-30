@@ -13,7 +13,7 @@ const Signup = () => {
     e.preventDefault();
 
     const res = await axios.post(
-      "http://localhost:5000/api/signup",
+      "https://home-chef-s.vercel.app//api/signup",
       {
         username,
         email,
