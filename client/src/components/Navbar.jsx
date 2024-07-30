@@ -10,7 +10,7 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   const handleLogout = async () => {
-    const res = await axios.get("http://localhost:5000/api/logout", {
+    const res = await axios.get("https://home-chef-s.vercel.app//api/logout", {
       withCredentials: true,
     });
     const data = await res.data;
@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   const checkUser = async () => {
-    const res = await axios.get("http://localhost:5000/api/checkUser", {
+    const res = await axios.get("https://home-chef-s.vercel.app//api/checkUser", {
       withCredentials: true,
     });
     const data = await res.data;
