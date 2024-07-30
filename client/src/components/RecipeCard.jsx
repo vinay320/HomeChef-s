@@ -18,7 +18,7 @@ const RecipeCard = ({ id, title, img }) => {
 
   const addToFav = async (favourite) => {
     const res = await axios.post(
-      `http://localhost:5000/api/addToFavourites/${user._id}`,
+      `https://home-chef-s.vercel.app/api/addToFavourites/${user._id}`,
       favourite,
       { withCredentials: true }
     );
@@ -29,7 +29,7 @@ const RecipeCard = ({ id, title, img }) => {
   };
   const removeFromFav = async (favourite) => {
     const res = await axios.post(
-      `http://localhost:5000/api/removeFromFavourites/${user._id}`,
+      `https://home-chef-s.vercel.app/api/removeFromFavourites/${user._id}`,
       favourite,
       { withCredentials: true }
     );
