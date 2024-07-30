@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault();
 
     const res = await axios.post(
-      "http://localhost:5000/api/login",
+      "https://home-chef-s.vercel.app/api/login",
       {
         email,
         password,
