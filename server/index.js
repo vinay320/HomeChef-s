@@ -8,7 +8,7 @@ const routes = require('./routes');
 require('dotenv').config();
 
 connectDB();
-app.use(cors({origin:"https://home-chef-s.vercel.app",credentials:true}));
+app.use(cors({origin:"https://home-chef-s-f.vercel.app",credentials:true}));
 app.use(express.json());
 app.use(cookieParser());
 
